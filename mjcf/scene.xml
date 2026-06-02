@@ -1,4 +1,4 @@
-<!-- ALLEX Model v0.1.1 -->
+<!-- ALLEX Model v0.1.2 -->
 <mujoco model="ALLEX scene">
   <include file="ALLEX.xml"/>
 

@@ -1,4 +1,4 @@
-<!-- ALLEX Model v0.1.1 -->
+<!-- ALLEX Model v0.1.2 -->
 <mujoco model="ALLEX">
   <!-- Compiler settings -->
   <compiler angle="radian" autolimits="true" meshdir="../meshes" />
@@ -7,10 +7,10 @@
   <!-- Default setting -->
   <default>
     <default class="visual">
-      <geom group="2" type="mesh" contype="0" conaffinity="0" density="0"/>
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
     </default>
     <default class="collision">
-      <geom group="3" type="mesh" density="2700"/>
+      <geom group="3" type="mesh"/>
     </default>
   </default>
 
@@ -267,7 +267,7 @@
                           <geom class="visual" material="gray" mesh="Wrist_Roll_Gray"/>
 
                           <body name="L_Wrist_Pitch_Link" pos="0.0135 0 -0.025">
-                            <inertial pos="-0.011930741 -0.005629078 -0.090903716" mass="1.025201999" fullinertia="0.003665 0.002955 0.0011 -0.00014 0.000155 -0.000081"/>
+                            <inertial pos="-0.013395506	0.001137719 -0.071900813" mass="0.767755918" fullinertia="0.00175 0.00138 0.000571 0.000009 -0.000031 0.000006"/>
                             <joint name="L_Wrist_Pitch_Joint" axis="0 1 0" range="-1.396263 1.396263" armature="0.001369" frictionloss="0.3" damping="0" actuatorfrcrange="-45 45" actuatorgravcomp="true" />
                             <geom class="collision" mesh="Wrist_Pitch_Collision1"/>
                             <geom class="collision" mesh="Wrist_Pitch_Collision2"/>
@@ -275,7 +275,7 @@
                             <geom class="visual" material="gray" mesh="Wrist_Pitch_Gray"/>
 
                             <body name="L_Palm_Link" pos="-0.0191006 0.00915 -0.086757" quat="0.9996764 0.021813 0.0002855 -0.0130865">
-                            <inertial pos="-0.008463053 -0.000238956 -0.081246173" mass="0.553111" fullinertia="0.000618120901641644 0.000425025914075929 0.000375922056278372 6.55226502878027E-06 -6.23431894047748E-05 -3.43964553653504E-06"/>
+                            <inertial pos="0 0 0" mass="0" diaginertia="0.001 0.001 0.001"/>
                             <geom class="collision" mesh="L_Palm_Back_Collision1"/>
                             <geom class="collision" mesh="L_Palm_Back_Collision2"/>
                             <geom class="collision" mesh="L_Palm_Back_Collision3"/>
@@ -511,7 +511,7 @@
                           <geom class="visual" material="gray" mesh="Wrist_Roll_Gray"/>
 
                           <body name="R_Wrist_Pitch_Link" pos="0.0135 0 -0.025">
-                            <inertial pos="-0.011930741 -0.005629078 -0.090903716" mass="1.025201999" fullinertia="0.003665 0.002955 0.0011 -0.00014 0.000155 -0.000081"/>
+                            <inertial pos="-0.013395506	-0.001137719 -0.071900813" mass="0.767755918" fullinertia="0.00175 0.00138 0.000571 -0.000009 -0.000031 -0.000006"/>
                             <joint name="R_Wrist_Pitch_Joint" axis="0 1 0" range="-1.396263 1.396263" armature="0.001369" frictionloss="0.3" damping="0" actuatorfrcrange="-45 45" actuatorgravcomp="true" />
                             <geom class="collision" mesh="Wrist_Pitch_Collision1"/>
                             <geom class="collision" mesh="Wrist_Pitch_Collision2"/>
@@ -519,7 +519,7 @@
                             <geom class="visual" material="gray" mesh="Wrist_Pitch_Gray"/>
 
                             <body name="R_Palm_Link" pos="-0.0191006 -0.00915 -0.086757" quat="0.9996764 -0.021813 0.0002855 0.0130865">
-                            <inertial pos="-0.008463053 0.000238956 -0.081246173" mass="0.553111" fullinertia="0.000618120901641644 0.000425025914075929 0.000375922056278372 -6.55226502878027E-06 -6.23431894047748E-05 3.43964553653504E-06"/>
+                            <inertial pos="0 0 0" mass="0" diaginertia="0.001 0.001 0.001"/>
                             <geom class="collision" mesh="R_Palm_Back_Collision1"/>
                             <geom class="collision" mesh="R_Palm_Back_Collision2"/>
                             <geom class="collision" mesh="R_Palm_Back_Collision3"/>
