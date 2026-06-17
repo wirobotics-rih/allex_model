@@ -1,0 +1,20 @@
+# Cursor IDE (GitHub에 올릴 때 제외)
+.cursor/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
