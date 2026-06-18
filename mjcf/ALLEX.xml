@@ -237,14 +237,14 @@
                 <geom class="visual" material="white" mesh="L_Shoulder_Pitch_White"/>
 
                 <body name="L_Shoulder_RollYaw_Link" pos="-0.1365 0.1195 0" quat="0.9914449 -0.1305262 -2e-7 0.0000013">
-                  <inertial pos="0.067817694 0.000055672 0.018793189" mass="2.869014517" fullinertia="0.012028 0.016399 0.010127 -0.000053 0.004039 -0.000022"/>
+                  <inertial pos="0.067817694 0.000055672 0.06" mass="2.869014517" fullinertia="0.012028 0.016399 0.010127 -0.000053 0.004039 -0.000022"/>
                   <joint name="L_Shoulder_Roll_Joint" axis="1 0 0" range="-0.087266 3.752458" armature="0.051135" frictionloss="1" damping="0" actuatorfrcrange="-120 120" actuatorgravcomp="true" />
                   <geom class="collision" mesh="Shoulder_RollYaw_Collision1"/>
                   <geom class="collision" mesh="Shoulder_RollYaw_Collision2"/>
                   <geom class="visual" material="white" mesh="Shoulder_RollYaw_White"/>
 
                   <body name="L_Upper_Arm_Link" pos="0.1365 0 0.0315">
-                    <inertial pos="0.001334417572 0.000309689499 -0.124077337509" quat="0.6928881439341 -0.01123129209145 0.7209187267705 0.007487821119587" mass="3.191415206" diaginertia="0.006281509788448 0.02989863619945 0.03060534067031" />
+                    <inertial pos="0.001334417572 0.000309689499 -0.174" quat="0.6928881439341 -0.01123129209145 0.7209187267705 0.007487821119587" mass="3.5" diaginertia="0.006281509788448 0.02989863619945 0.03060534067031" />
                     <joint name="L_Shoulder_Yaw_Joint" axis="0 0 1" range="-3.316126 1.745329" armature="0.051135" frictionloss="1" damping="0" actuatorfrcrange="-120 120" actuatorgravcomp="true" />
                     <geom class="collision" mesh="Upper_Arm_Collision1"/>
                     <geom class="collision" mesh="Upper_Arm_Collision2"/>
@@ -283,7 +283,7 @@
                           <geom class="visual" material="gray" mesh="Wrist_Roll_Gray"/>
 
                           <body name="L_Wrist_Pitch_Link" pos="0.0135 0 -0.025">
-                            <inertial pos="-0.013395506	0.001137719 -0.071900813" mass="0.767755918" fullinertia="0.00175 0.00138 0.000571 0.000009 -0.000031 0.000006"/>
+                            <inertial pos="-0.013395506	0.001137719 -0.071900813" mass="1.1" fullinertia="0.00175 0.00138 0.000571 0.000009 -0.000031 0.000006"/>
                             <joint name="L_Wrist_Pitch_Joint" axis="0 1 0" range="-1.396263 1.396263" armature="0.001369" frictionloss="0.3" damping="0" actuatorfrcrange="-45 45" actuatorgravcomp="true" />
                             <geom class="collision" mesh="Wrist_Pitch_Collision1"/>
                             <geom class="collision" mesh="Wrist_Pitch_Collision2"/>
@@ -498,15 +498,15 @@
                 <geom class="visual" material="black" mesh="R_Shoulder_Pitch_Black"/>
                 <geom class="visual" material="white" mesh="R_Shoulder_Pitch_White"/>
 
-                <body name="R_Shoulder_Roll_Link" pos="-0.1365 -0.1195 0" quat="0.9914449 0.1305262 2e-7 0.0000013">
-                  <inertial pos="0.067817694 0.000055672 0.018793189" mass="2.869014517" fullinertia="0.012028 0.016399 0.010127 -0.000053 0.004039 -0.000022"/>
+                <body name="R_Shoulder_RollYaw_Link" pos="-0.1365 -0.1195 0" quat="0.9914449 0.1305262 2e-7 0.0000013">
+                  <inertial pos="0.067817694 0.000055672 0.06" mass="2.869014517" fullinertia="0.012028 0.016399 0.010127 -0.000053 0.004039 -0.000022"/>
                   <joint name="R_Shoulder_Roll_Joint" axis="1 0 0" range="-3.752458 0.087266" armature="0.051135" frictionloss="1" damping="0" actuatorfrcrange="-120 120" actuatorgravcomp="true" />
                   <geom class="collision" mesh="Shoulder_RollYaw_Collision1"/>
                   <geom class="collision" mesh="Shoulder_RollYaw_Collision2"/>
                   <geom class="visual" material="white" mesh="Shoulder_RollYaw_White"/>
 
                   <body name="R_Upper_Arm_Link" pos="0.1365 0 0.0315">
-                    <inertial pos="0.001334417572 0.000309689499 -0.124077337509" quat="0.6928881439341 -0.01123129209145 0.7209187267705 0.007487821119587" mass="3.191415206" diaginertia="0.006281509788448 0.02989863619945 0.03060534067031" /><joint name="R_Shoulder_Yaw_Joint" axis="0 0 1" range="-1.745329 3.316126" armature="0.051135" frictionloss="1" damping="0" actuatorfrcrange="-120 120" actuatorgravcomp="true" />
+                    <inertial pos="0.001334417572 0.000309689499 -0.174" quat="0.6928881439341 -0.01123129209145 0.7209187267705 0.007487821119587" mass="3.5" diaginertia="0.006281509788448 0.02989863619945 0.03060534067031" /><joint name="R_Shoulder_Yaw_Joint" axis="0 0 1" range="-1.745329 3.316126" armature="0.051135" frictionloss="1" damping="0" actuatorfrcrange="-120 120" actuatorgravcomp="true" />
                     <geom class="collision" mesh="Upper_Arm_Collision1"/>
                     <geom class="collision" mesh="Upper_Arm_Collision2"/>
                     <geom class="collision" mesh="Upper_Arm_Collision3"/>
@@ -544,7 +544,7 @@
                           <geom class="visual" material="gray" mesh="Wrist_Roll_Gray"/>
 
                           <body name="R_Wrist_Pitch_Link" pos="0.0135 0 -0.025">
-                            <inertial pos="-0.013395506	-0.001137719 -0.071900813" mass="0.767755918" fullinertia="0.00175 0.00138 0.000571 -0.000009 -0.000031 -0.000006"/>
+                            <inertial pos="-0.013395506	-0.001137719 -0.071900813" mass="1.1" fullinertia="0.00175 0.00138 0.000571 -0.000009 -0.000031 -0.000006"/>
                             <joint name="R_Wrist_Pitch_Joint" axis="0 1 0" range="-1.396263 1.396263" armature="0.001369" frictionloss="0.3" damping="0" actuatorfrcrange="-45 45" actuatorgravcomp="true" />
                             <geom class="collision" mesh="Wrist_Pitch_Collision1"/>
                             <geom class="collision" mesh="Wrist_Pitch_Collision2"/>
