@@ -7,8 +7,8 @@ engineered for high backdrivability and low distal mass to keep the sim-to-real 
 
 This repository is a multi-format simulation model of ALLEX, provided in **MJCF**, **URDF**,
 and **USD** with a shared mesh set. The same kinematics, inertials, and joint coupling are
-projected into each format so the robot behaves consistently across MuJoCo, ROS / Gazebo,
-and the Isaac / OpenUSD ecosystem.
+projected into each format so the robot behaves consistently across MuJoCo and the
+Isaac / OpenUSD ecosystem, and stays consistent for ROS 2 tooling (RViz, MoveIt).
 
 - **48 actuated DOF** — two 7-DOF arms, two 15-DOF five-finger hands, a 2-DOF waist, and a
   2-DOF neck.
@@ -30,7 +30,7 @@ allex_model/
 │  ├─ ALLEX.xml      # robot model (MuJoCo)
 │  └─ scene.xml      # ALLEX.xml + ground plane, lighting (load this one)
 ├─ urdf/
-│  └─ ALLEX.urdf     # robot model (ROS / Gazebo / generic URDF)
+│  └─ ALLEX.urdf     # robot model (ROS 2 / RViz / MoveIt — kinematics, not dynamics)
 ├─ usd/
 │  └─ ALLEX.usd      # robot model (Isaac Sim / OpenUSD) — EXPERIMENTAL
 ├─ meshes/           # tessellated visual + collision geometry (STL)
@@ -47,14 +47,18 @@ data  = mujoco.MjData(model)
 # or: python -m mujoco.viewer --mjcf=mjcf/scene.xml
 ```
 
-**ROS 2 / RViz / Gazebo**
+**ROS 2 / RViz / MoveIt**
 
 This repository ships the model files only — it is **not** a ROS package (no `package.xml`).
-The URDF references meshes as `package://allex_description/...`, so loading it in RViz or
-Gazebo requires the `allex_description` package on your ament path. That package — together
-with launch files, `ros2_control`, gravity compensation, and a Gazebo setup
-(`allex_gazebo`) — is provided by the separate `allex_ros2` workspace (published
-separately), which consumes this model.
+The URDF references meshes as `package://allex_description/...`, so loading it in RViz
+requires the `allex_description` package on your ament path. That package — together with
+launch files, `ros2_control`, gravity compensation, and MoveIt configuration — is provided
+by the separate `allex_ros2` workspace (published separately), which consumes this model.
+
+The URDF is intended for **kinematics and integration** — RViz visualization, MoveIt
+planning, and ROS 2 — not dynamics. **Gazebo is not supported** (its physics does not
+reliably handle the coupling joints; see [Per-format notes](#per-format-notes)). For
+dynamics, use MJCF or USD.
 
 **Isaac Sim / OpenUSD** *(experimental)*
 ```python
@@ -74,10 +78,15 @@ however, differ by runtime:
   limits (`actuatorfrcrange`), and joint ranges. MuJoCo has no joint *velocity*-limit
   field, so velocity limits are **not** encoded here — enforce them in your controller if
   needed.
-- **URDF (ROS / Gazebo).** Per-joint position, effort, and velocity limits are included.
-  PD gains are **not** in the URDF — they belong to the `ros2_control` config in the
-  separate `allex_ros2` workspace. Meshes are referenced via `package://allex_description`
-  (see [Quick start](#quick-start)).
+- **URDF (ROS 2 — RViz / MoveIt).** Per-joint position, effort, and velocity limits are
+  included; PD gains are **not** in the URDF (they live in the `ros2_control` config of the
+  separate `allex_ros2` workspace). Meshes are referenced via `package://allex_description`
+  (see [Quick start](#quick-start)). Use the URDF for **kinematics and integration**
+  (visualization, motion planning, ROS 2) — **not dynamics**. **Gazebo is not supported:**
+  its physics (gz-physics on Jazzy) does not reliably handle the mimic/coupling joints —
+  the finger DIP/IP couplings and the waist 4-bar linkage — so contacts, and especially
+  gravity compensation propagated through the waist coupling, are wrong. Use **MJCF** or
+  **USD** for dynamics.
 - **USD (Isaac Sim / OpenUSD) — experimental.** Both a PhysX and a Newton/MJC schema are
   emitted. Drive gains follow the UsdPhysics convention — **per-degree** units (the
   radian-space `kp`/`kv` scaled by π/180) — and the same values apply to both the PhysX and
