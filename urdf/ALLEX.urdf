@@ -84,9 +84,9 @@
   </link>
   <link name="Waist_Upper_Pitch_Link">
     <inertial>
-      <origin xyz="-0.020961853 -0.005075656 0.111515576" rpy="1.71399954 0.00014479043 1.49498478" />
-      <mass value="3.24744786" />
-      <inertia ixx="0.0372286233" iyy="0.0288152723" izz="0.0179021045" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="-0.0397 -0.0003 0.1189" rpy="1.58104391 1.2364387 0.00723096239" />
+      <mass value="2.780295" />
+      <inertia ixx="0.0185193677" iyy="0.0207840048" izz="0.0275323814" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
       <material name="led" />
@@ -172,7 +172,7 @@
   <link name="zed_camera_link" />
   <link name="L_Shoulder_Pitch_Link">
     <inertial>
-      <origin xyz="-0.089957538 0.03745113 -0.000688094" rpy="1.5580494 -0.11529304 2.04165189" />
+      <origin xyz="-0.09 0.0375 -0.0007" rpy="1.5580494 -0.11529304 2.04165189" />
       <mass value="1.01542188" />
       <inertia ixx="0.00793369722" iyy="0.00733584078" izz="0.002641462" ixy="0" ixz="0" iyz="0" />
     </inertial>
@@ -206,7 +206,7 @@
   </link>
   <link name="L_Shoulder_RollYaw_Link">
     <inertial>
-      <origin xyz="0.067817694 5.5672e-05 0.06" rpy="-0.669358211 0.0278536652 1.60864428" />
+      <origin xyz="0.0678 0.0001 0.04" rpy="-0.669358211 0.0278536652 1.60864428" />
       <mass value="2.86901452" />
       <inertia ixx="0.0164016202" iyy="0.0152242395" izz="0.00692814028" ixy="0" ixz="0" iyz="0" />
     </inertial>
@@ -229,9 +229,9 @@
   </link>
   <link name="L_Upper_Arm_Link">
     <inertial>
-      <origin xyz="0.00133441757 0.000309689499 -0.174" rpy="-3.02206816 1.53080048 -2.99558927" />
-      <mass value="3.5" />
-      <inertia ixx="0.00628150979" iyy="0.0298986362" izz="0.0306053407" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="0.0013 0.0003 -0.1955" rpy="-3.02206816 1.53080048 -2.99558927" />
+      <mass value="3.51" />
+      <inertia ixx="0.00628165" iyy="0.029898693" izz="0.030695144" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
       <material name="gray" />
@@ -311,7 +311,7 @@
   </link>
   <link name="L_Elbow_Link">
     <inertial>
-      <origin xyz="-0.0231001662 5.1220393e-05 -0.00858718536" rpy="-0.0656563862 0.238783548 -0.000364268369" />
+      <origin xyz="-0.0231 5e-05 -0.0086" rpy="-0.0656563862 0.238783548 -0.000364268369" />
       <mass value="0.784434687" />
       <inertia ixx="0.000791828969" iyy="0.00153464464" izz="0.00182644434" ixy="0" ixz="0" iyz="0" />
     </inertial>
@@ -329,8 +329,8 @@
   </link>
   <link name="L_Forearm_Link">
     <inertial>
-      <origin xyz="-0.00788242068 -0.000103067149 -0.116426277" rpy="-1.58149419 -1.46449268 0.00786387073" />
-      <mass value="3.02673929" />
+      <origin xyz="-0.0079 -0.0001 -0.1425" rpy="-1.58149419 -1.46449268 0.00786387073" />
+      <mass value="3.1" />
       <inertia ixx="0.00391705254" iyy="0.0158883084" izz="0.0168914523" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
@@ -369,8 +369,8 @@
   </link>
   <link name="L_Wrist_Roll_Link">
     <inertial>
-      <origin xyz="0.004686796 0.002254747 -0.012267969" rpy="1.66916973 0.624513123 0.120127939" />
-      <mass value="0.075462826" />
+      <origin xyz="-0.0004 0.0003 -0.023" rpy="1.66916973 0.624513123 0.120127939" />
+      <mass value="0.172" />
       <inertia ixx="4.65972759e-05" iyy="3.3688034e-05" izz="1.77146901e-05" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
@@ -387,8 +387,8 @@
   </link>
   <link name="L_Wrist_Pitch_Link">
     <inertial>
-      <origin xyz="-0.013395506 0.001137719 -0.071900813" rpy="0.0083235297 0.0261360613 0.0238297314" />
-      <mass value="1.1" />
+      <origin xyz="-0.0115 -0.0061 -0.1013" rpy="0.0083235297 0.0261360613 0.0238297314" />
+      <mass value="0.97383" />
       <inertia ixx="0.00175102514" iyy="0.00137983739" izz="0.000570137469" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
@@ -1010,7 +1010,7 @@
   </link>
   <link name="R_Shoulder_Pitch_Link">
     <inertial>
-      <origin xyz="-0.089957538 -0.03745113 -0.000688094" rpy="1.5580494 0.11529304 1.09994077" />
+      <origin xyz="-0.09 -0.0375 -0.0007" rpy="1.5580494 0.11529304 1.09994077" />
       <mass value="1.01542188" />
       <inertia ixx="0.00793369722" iyy="0.00733584078" izz="0.002641462" ixy="0" ixz="0" iyz="0" />
     </inertial>
@@ -1044,7 +1044,7 @@
   </link>
   <link name="R_Shoulder_RollYaw_Link">
     <inertial>
-      <origin xyz="0.067817694 5.5672e-05 0.06" rpy="-0.669358211 0.0278536652 1.60864428" />
+      <origin xyz="0.0678 0.0001 0.04" rpy="-0.669358211 0.0278536652 1.60864428" />
       <mass value="2.86901452" />
       <inertia ixx="0.0164016202" iyy="0.0152242395" izz="0.00692814028" ixy="0" ixz="0" iyz="0" />
     </inertial>
@@ -1067,9 +1067,9 @@
   </link>
   <link name="R_Upper_Arm_Link">
     <inertial>
-      <origin xyz="0.00133441757 0.000309689499 -0.174" rpy="-3.02206816 1.53080048 -2.99558927" />
-      <mass value="3.5" />
-      <inertia ixx="0.00628150979" iyy="0.0298986362" izz="0.0306053407" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="0.0013 0.0003 -0.1955" rpy="-3.02206816 1.53080048 -2.99558927" />
+      <mass value="3.51" />
+      <inertia ixx="0.0062815" iyy="0.029898693" izz="0.030695144" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
       <material name="gray" />
@@ -1149,7 +1149,7 @@
   </link>
   <link name="R_Elbow_Link">
     <inertial>
-      <origin xyz="-0.0231001662 5.1220393e-05 -0.00858718536" rpy="-0.0656563862 0.238783548 -0.000364268369" />
+      <origin xyz="-0.0231 5e-05 -0.0086" rpy="-0.0656563862 0.238783548 -0.000364268369" />
       <mass value="0.784434687" />
       <inertia ixx="0.000791828969" iyy="0.00153464464" izz="0.00182644434" ixy="0" ixz="0" iyz="0" />
     </inertial>
@@ -1167,8 +1167,8 @@
   </link>
   <link name="R_Forearm_Link">
     <inertial>
-      <origin xyz="-0.00788242068 -0.000103067149 -0.116426277" rpy="-1.58149419 -1.46449268 0.00786387073" />
-      <mass value="3.02673929" />
+      <origin xyz="-0.0079 -0.0001 -0.1425" rpy="-1.58149419 -1.46449268 0.00786387073" />
+      <mass value="3.1" />
       <inertia ixx="0.00391705254" iyy="0.0158883084" izz="0.0168914523" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
@@ -1207,8 +1207,8 @@
   </link>
   <link name="R_Wrist_Roll_Link">
     <inertial>
-      <origin xyz="0.004686796 0.002254747 -0.012267969" rpy="1.66916973 0.624513123 0.120127939" />
-      <mass value="0.075462826" />
+      <origin xyz="-0.0004 0.0003 -0.023" rpy="1.66916973 0.624513123 0.120127939" />
+      <mass value="0.172" />
       <inertia ixx="4.65972759e-05" iyy="3.3688034e-05" izz="1.77146901e-05" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
@@ -1225,8 +1225,8 @@
   </link>
   <link name="R_Wrist_Pitch_Link">
     <inertial>
-      <origin xyz="-0.013395506 -0.001137719 -0.071900813" rpy="-0.0083235297 0.0261360613 -0.0238297314" />
-      <mass value="1.1" />
+      <origin xyz="-0.0115 -0.0061 -0.1013" rpy="-0.0083235297 0.0261360613 -0.0238297314" />
+      <mass value="0.97383" />
       <inertia ixx="0.00175102514" iyy="0.00137983739" izz="0.000570137469" ixy="0" ixz="0" iyz="0" />
     </inertial>
     <visual>
@@ -1851,7 +1851,7 @@
     <child link="Waist_Yaw_Link" />
     <origin xyz="0 0 0.064" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0.95" friction="4.361" />
     <limit lower="-2.792526" upper="2.792526" effort="126" velocity="8" />
   </joint>
   <joint name="Waist_Pitch_Dummy_Joint" type="revolute">
@@ -1868,7 +1868,7 @@
     <child link="Waist_Lower_Pitch_Link" />
     <origin xyz="0.06 0 0.12" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0.01" friction="2.31675" />
     <limit lower="-0.523598" upper="0.785398" effort="126" velocity="8" />
   </joint>
   <joint name="Waist_Upper_Pitch_Joint" type="revolute">
@@ -1885,7 +1885,7 @@
     <child link="Neck_Pitch_Link" />
     <origin xyz="-0.0335 0 0.1380804" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.33968" />
     <limit lower="-0.523599" upper="0.785398" effort="12" velocity="20" />
   </joint>
   <joint name="Neck_Yaw_Joint" type="revolute">
@@ -1893,7 +1893,7 @@
     <child link="Neck_Yaw_Link" />
     <origin xyz="-5e-07 0 0.093" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.1501" />
     <limit lower="-1.570796" upper="1.570796" effort="6" velocity="20" />
   </joint>
   <joint name="L_Shoulder_Pitch_Joint" type="revolute">
@@ -1957,7 +1957,7 @@
     <child link="L_Thumb_Yaw_Link" />
     <origin xyz="0.0098274 0.0210533 0.0360908" rpy="0.0857013198 0.12731092 -0.126608008" />
     <axis xyz="0 0 -1" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.03874" />
     <limit lower="0" upper="2.617994" effort="2.9" velocity="5" />
   </joint>
   <joint name="L_Thumb_CMC_Joint" type="revolute">
@@ -1965,7 +1965,7 @@
     <child link="L_Thumb_Proximal_Link" />
     <origin xyz="0 0.0139985 -0.0323434" rpy="-0.268480431 0 0" />
     <axis xyz="-1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.05879" />
     <limit lower="0" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="L_Thumb_MCP_Joint" type="revolute">
@@ -1973,7 +1973,7 @@
     <child link="L_Thumb_Middle_Link" />
     <origin xyz="0 0.0501371 0.0137939" rpy="0 0 0" />
     <axis xyz="-1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0185" />
     <limit lower="0" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="L_Thumb_IP_Joint" type="revolute">
@@ -1990,7 +1990,7 @@
     <child link="L_Index_Roll_Link" />
     <origin xyz="-0.0186259 0.0330567 -0.0383928" rpy="0.111559433 -0.342338035 -0.087060514" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0137996" />
     <limit lower="-0.523599" upper="0.523599" effort="2.1" velocity="8" />
   </joint>
   <joint name="L_Index_MCP_Joint" type="revolute">
@@ -1998,7 +1998,7 @@
     <child link="L_Index_Proximal_Link" />
     <origin xyz="-0.003817 0 -0.0061246" rpy="0 0.349065878 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0456392" />
     <limit lower="-0.174532" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="L_Index_PIP_Joint" type="revolute">
@@ -2006,7 +2006,7 @@
     <child link="L_Index_Middle_Link" />
     <origin xyz="0 0 -0.052" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0210383" />
     <limit lower="0" upper="1.7453293" effort="3" velocity="10" />
   </joint>
   <joint name="L_Index_DIP_Joint" type="revolute">
@@ -2023,7 +2023,7 @@
     <child link="L_Middle_Roll_Link" />
     <origin xyz="-0.0197378 0.0111686 -0.0403088" rpy="0 -0.349065878 0" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0137996" />
     <limit lower="-0.523599" upper="0.523599" effort="2.1" velocity="8" />
   </joint>
   <joint name="L_Middle_MCP_Joint" type="revolute">
@@ -2031,7 +2031,7 @@
     <child link="L_Middle_Proximal_Link" />
     <origin xyz="-0.003817 0 -0.0061246" rpy="0 0.349065878 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0456392" />
     <limit lower="-0.174532" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="L_Middle_PIP_Joint" type="revolute">
@@ -2039,7 +2039,7 @@
     <child link="L_Middle_Middle_Link" />
     <origin xyz="0 0 -0.052" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0210383" />
     <limit lower="0" upper="1.7453293" effort="3" velocity="10" />
   </joint>
   <joint name="L_Middle_DIP_Joint" type="revolute">
@@ -2056,7 +2056,7 @@
     <child link="L_Ring_Roll_Link" />
     <origin xyz="-0.0197763 -0.0108314 -0.040309" rpy="-0.111559433 -0.342338035 0.087060514" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0137996" />
     <limit lower="-0.523599" upper="0.523599" effort="2.1" velocity="8" />
   </joint>
   <joint name="L_Ring_MCP_Joint" type="revolute">
@@ -2064,7 +2064,7 @@
     <child link="L_Ring_Proximal_Link" />
     <origin xyz="-0.003817 0 -0.0061246" rpy="0 0.349065878 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0456392" />
     <limit lower="-0.174532" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="L_Ring_PIP_Joint" type="revolute">
@@ -2072,7 +2072,7 @@
     <child link="L_Ring_Middle_Link" />
     <origin xyz="0 0 -0.052" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0210383" />
     <limit lower="0" upper="1.7453293" effort="3" velocity="10" />
   </joint>
   <joint name="L_Ring_DIP_Joint" type="revolute">
@@ -2089,7 +2089,7 @@
     <child link="L_Little_Roll_Link" />
     <origin xyz="-0.0185852 -0.0327196 -0.0383938" rpy="-0.220991363 -0.322382983 0.171647217" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0137996" />
     <limit lower="-0.523599" upper="0.523599" effort="2.1" velocity="8" />
   </joint>
   <joint name="L_Little_MCP_Joint" type="revolute">
@@ -2097,7 +2097,7 @@
     <child link="L_Little_Proximal_Link" />
     <origin xyz="-0.003817 0 -0.0061246" rpy="0 0.349065878 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0456392" />
     <limit lower="-0.174532" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="L_Little_PIP_Joint" type="revolute">
@@ -2105,7 +2105,7 @@
     <child link="L_Little_Middle_Link" />
     <origin xyz="0 0 -0.052" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0210383" />
     <limit lower="0" upper="1.7453293" effort="3" velocity="10" />
   </joint>
   <joint name="L_Little_DIP_Joint" type="revolute">
@@ -2178,7 +2178,7 @@
     <child link="R_Thumb_Yaw_Link" />
     <origin xyz="0.0098263 -0.0210097 0.0360889" rpy="-0.0857013198 0.12731092 0.126608008" />
     <axis xyz="0 0 -1" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.03874" />
     <limit lower="-2.617994" upper="0" effort="2.9" velocity="5" />
   </joint>
   <joint name="R_Thumb_CMC_Joint" type="revolute">
@@ -2186,7 +2186,7 @@
     <child link="R_Thumb_Proximal_Link" />
     <origin xyz="0 -0.0139985 -0.0323434" rpy="0.268480431 0 0" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.05879" />
     <limit lower="0" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="R_Thumb_MCP_Joint" type="revolute">
@@ -2194,7 +2194,7 @@
     <child link="R_Thumb_Middle_Link" />
     <origin xyz="0 -0.0501371 0.0137939" rpy="0 0 0" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0185" />
     <limit lower="0" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="R_Thumb_IP_Joint" type="revolute">
@@ -2211,7 +2211,7 @@
     <child link="R_Index_Roll_Link" />
     <origin xyz="-0.0186259 -0.0330567 -0.0383928" rpy="-0.111559433 -0.342338035 0.087060514" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0137996" />
     <limit lower="-0.523599" upper="0.523599" effort="2.1" velocity="8" />
   </joint>
   <joint name="R_Index_MCP_Joint" type="revolute">
@@ -2219,7 +2219,7 @@
     <child link="R_Index_Proximal_Link" />
     <origin xyz="-0.003817 0 -0.0061246" rpy="0 0.349065878 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0456392" />
     <limit lower="-0.174532" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="R_Index_PIP_Joint" type="revolute">
@@ -2227,7 +2227,7 @@
     <child link="R_Index_Middle_Link" />
     <origin xyz="0 0 -0.052" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0210383" />
     <limit lower="0" upper="1.7453293" effort="3" velocity="10" />
   </joint>
   <joint name="R_Index_DIP_Joint" type="revolute">
@@ -2244,7 +2244,7 @@
     <child link="R_Middle_Roll_Link" />
     <origin xyz="-0.0197378 -0.0111686 -0.0403088" rpy="0 -0.349065878 0" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0137996" />
     <limit lower="-0.523599" upper="0.523599" effort="2.1" velocity="8" />
   </joint>
   <joint name="R_Middle_MCP_Joint" type="revolute">
@@ -2252,7 +2252,7 @@
     <child link="R_Middle_Proximal_Link" />
     <origin xyz="-0.003817 0 -0.0061246" rpy="0 0.349065878 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0456392" />
     <limit lower="-0.174532" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="R_Middle_PIP_Joint" type="revolute">
@@ -2260,7 +2260,7 @@
     <child link="R_Middle_Middle_Link" />
     <origin xyz="0 0 -0.052" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0210383" />
     <limit lower="0" upper="1.7453293" effort="3" velocity="10" />
   </joint>
   <joint name="R_Middle_DIP_Joint" type="revolute">
@@ -2277,7 +2277,7 @@
     <child link="R_Ring_Roll_Link" />
     <origin xyz="-0.0197763 0.0108314 -0.040309" rpy="0.111559433 -0.342338035 -0.087060514" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0137996" />
     <limit lower="-0.523599" upper="0.523599" effort="2.1" velocity="8" />
   </joint>
   <joint name="R_Ring_MCP_Joint" type="revolute">
@@ -2285,7 +2285,7 @@
     <child link="R_Ring_Proximal_Link" />
     <origin xyz="-0.003817 0 -0.0061246" rpy="0 0.349065878 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0456392" />
     <limit lower="-0.174532" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="R_Ring_PIP_Joint" type="revolute">
@@ -2293,7 +2293,7 @@
     <child link="R_Ring_Middle_Link" />
     <origin xyz="0 0 -0.052" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0210383" />
     <limit lower="0" upper="1.7453293" effort="3" velocity="10" />
   </joint>
   <joint name="R_Ring_DIP_Joint" type="revolute">
@@ -2310,7 +2310,7 @@
     <child link="R_Little_Roll_Link" />
     <origin xyz="-0.0185852 0.0327196 -0.0383938" rpy="0.220991363 -0.322382983 -0.171647217" />
     <axis xyz="1 0 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0137996" />
     <limit lower="-0.523599" upper="0.523599" effort="2.1" velocity="8" />
   </joint>
   <joint name="R_Little_MCP_Joint" type="revolute">
@@ -2318,7 +2318,7 @@
     <child link="R_Little_Proximal_Link" />
     <origin xyz="-0.003817 0 -0.0061246" rpy="0 0.349065878 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0456392" />
     <limit lower="-0.174532" upper="1.570796" effort="4.8" velocity="8" />
   </joint>
   <joint name="R_Little_PIP_Joint" type="revolute">
@@ -2326,7 +2326,7 @@
     <child link="R_Little_Middle_Link" />
     <origin xyz="0 0 -0.052" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <dynamics damping="0" friction="0" />
+    <dynamics damping="0" friction="0.0210383" />
     <limit lower="0" upper="1.7453293" effort="3" velocity="10" />
   </joint>
   <joint name="R_Little_DIP_Joint" type="revolute">

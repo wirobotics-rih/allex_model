@@ -34,7 +34,9 @@ allex_model/
 ├─ usd/
 │  └─ ALLEX.usd      # robot model (Isaac Sim / OpenUSD) — EXPERIMENTAL
 ├─ meshes/           # tessellated visual + collision geometry (STL)
-└─ LICENSE
+├─ examples/         # runnable examples (MuJoCo motion replay) + recorded motions
+├─ LICENSE
+└─ MESHES-LICENSE
 ```
 
 ## Quick start
@@ -46,6 +48,9 @@ model = mujoco.MjModel.from_xml_path("mjcf/scene.xml")
 data  = mujoco.MjData(model)
 # or: python -m mujoco.viewer --mjcf=mjcf/scene.xml
 ```
+
+For a runnable demo — recorded-motion playback under PD position control with
+gravity-compensation feed-forward — see [`examples/`](./examples/).
 
 **ROS 2 / RViz / MoveIt**
 
@@ -90,10 +95,10 @@ however, differ by runtime:
 - **USD (Isaac Sim / OpenUSD) — experimental.** Both a PhysX and a Newton/MJC schema are
   emitted. Drive gains follow the UsdPhysics convention — **per-degree** units (the
   radian-space `kp`/`kv` scaled by π/180) — and the same values apply to both the PhysX and
-  Newton backends, which convert to their internal units on import. The finger coupling is
-  currently a linear approximation in both schemas (exact-polynomial Newton coupling is
-  still being validated; see [Joint coupling](#joint-coupling)). Newton support in Isaac Sim
-  is itself experimental — prefer MJCF or URDF for now.
+  Newton backends, which convert to their internal units on import. The finger coupling is a
+  linear approximation in both schemas, matching the URDF (see
+  [Joint coupling](#joint-coupling)). Newton support in Isaac Sim is itself experimental —
+  prefer MJCF or URDF for now.
 
 ## Joint coupling
 
@@ -115,7 +120,6 @@ differently to match each runtime:
 Only the MJCF carries the exact polynomial; for URDF and USD consumers the finger coupling
 is a linear approximation of it. Expect a small deviation away from the origin — if
 your application is sensitive to fingertip kinematics, validate against the MJCF model.
-(Exact-polynomial coupling in the USD Newton schema is planned but not yet emitted.)
 
 ## Versioning
 

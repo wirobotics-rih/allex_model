@@ -1,7 +1,3 @@
-This BSD 3-Clause License applies to all files in this repository EXCEPT the
-3D mesh geometry under meshes/ (the *.stl files, both visual and collision),
-which is licensed separately — see MESHES-LICENSE.
-
 BSD 3-Clause License
 
 Copyright (c) 2026, WIRobotics Inc.
