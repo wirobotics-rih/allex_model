@@ -1,16 +1,32 @@
-# Copyright (c) 2026, WIRobotics Inc. All rights reserved.
+This BSD 3-Clause License applies to all files in this repository EXCEPT the
+3D mesh geometry under meshes/ (the *.stl files, both visual and collision),
+which is licensed separately — see MESHES-LICENSE.
 
-This simulation model (the "Model") is proprietary to WIRobotics Inc. and is made
-publicly available for evaluation and reference purposes only.
+BSD 3-Clause License
 
-You may view, download, and run the Model to evaluate the ALLEX robot in simulation.
+Copyright (c) 2026, WIRobotics Inc.
 
-Without prior written permission from WIRobotics Inc., you may NOT:
-  - redistribute the Model or any part of it,
-  - modify the Model and distribute the modified version,
-  - incorporate the Model into a product or commercial offering, or
-  - use the Model for any commercial purpose.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-THE MODEL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
 
-For licensing inquiries, contact WIRobotics Inc.
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

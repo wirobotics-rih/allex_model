@@ -1,0 +1,18 @@
+Mesh Geometry License — ALLEX Simulation Model
+
+The 3D mesh geometry under meshes/ (all *.stl files, both visual and collision)
+is © 2026 WIRobotics Inc. and is NOT covered by the repository's BSD 3-Clause
+License (see LICENSE).
+
+These mesh files are provided as reference geometry for evaluation and reference
+purposes only. You may download and use them to evaluate and simulate the ALLEX
+robot. Without prior written permission from WIRobotics Inc., you may NOT:
+  - redistribute the mesh files or any part of them,
+  - modify the mesh files and distribute the modified versions,
+  - incorporate the mesh files into a product or commercial offering, or
+  - use the mesh files for any commercial purpose.
+
+THE MESH FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED.
+
+For licensing inquiries, contact WIRobotics Inc.

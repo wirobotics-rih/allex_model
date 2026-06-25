@@ -126,6 +126,8 @@ open an issue in this repository or contact the WIRobotics simulation team.
 
 ## License
 
-© 2026 WIRobotics Inc. All rights reserved. Published for **evaluation and reference
-only** — redistribution, modification, and commercial use require written permission.
-See [LICENSE](./LICENSE).
+The robot description and configuration files (`mjcf/`, `urdf/`, `usd/`) are released under
+the **BSD 3-Clause License** — see [LICENSE](./LICENSE). The 3D mesh geometry
+(`meshes/*.stl`, both visual and collision) is **not** BSD-licensed; it is provided as
+reference geometry for evaluation only, under separate terms — see
+[MESHES-LICENSE](./MESHES-LICENSE).
