@@ -49,8 +49,8 @@ data  = mujoco.MjData(model)
 # or: python -m mujoco.viewer --mjcf=mjcf/scene.xml
 ```
 
-For a runnable demo — recorded-motion playback with gravity-compensation feed-forward —
-see [`examples/`](./examples/).
+For a runnable demo — recorded-motion playback under PD position control with
+gravity-compensation feed-forward — see [`examples/`](./examples/).
 
 **ROS 2 / RViz / MoveIt**
 
