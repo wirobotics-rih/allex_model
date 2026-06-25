@@ -119,11 +119,11 @@ your application is sensitive to fingertip kinematics, validate against the MJCF
 
 ## Versioning
 
-Releases are tagged `vMAJOR.MINOR.PATCH` (current: `v0.2.0`). The model is **pre-release**
-while ALLEX is in development: `0.MINOR` tracks the hardware prototype generation
-(`0.2` = research-prototype v2), and `1.0.0` will mark the research-edition release. Only
-the latest version is published, and each model file records its source version in a header
-comment.
+Releases are tagged `vMAJOR.MINOR.PATCH`. The model is **pre-release** while ALLEX is in
+development: `0.MINOR` tracks the hardware prototype generation (`0.1` = research-prototype
+v1, `0.2` = research-prototype v2), each maintained on its own branch (`proto_v1`,
+`proto_v2`); `main` follows the latest generation. `1.0.0` will mark the research-edition
+release.
 
 ## Contributing
 
