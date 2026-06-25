@@ -1,4 +1,3 @@
-<!-- ALLEX Model v0.1.2 -->
 <mujoco model="ALLEX">
   <!-- Compiler settings -->
   <compiler angle="radian" autolimits="true" meshdir="../meshes" />
@@ -772,20 +771,20 @@
 
   <equality>
     <!-- Waist -->
-    <joint joint1="Waist_Lower_Pitch_Joint" joint2="Waist_Upper_Pitch_Joint" polycoef="0 -1 0 0 0" active="true" />
-    <joint joint1="Waist_Lower_Pitch_Joint" joint2="Waist_Pitch_Dummy_Joint" polycoef="0 1 0 0 0" active="true" />
+    <joint name="eq_waist_upper_lower" joint1="Waist_Lower_Pitch_Joint" joint2="Waist_Upper_Pitch_Joint" polycoef="0 -1 0 0 0" active="true" />
+    <joint name="eq_waist_dummy_lower" joint1="Waist_Lower_Pitch_Joint" joint2="Waist_Pitch_Dummy_Joint" polycoef="0 1 0 0 0" active="true" />
     <!-- Left hand -->
-    <joint joint1="L_Thumb_IP_Joint" joint2="L_Thumb_MCP_Joint" polycoef="-0.0015 0.6651 0.0186 0.1224 -0.0696" active="true" />
-    <joint joint1="L_Index_DIP_Joint" joint2="L_Index_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
-    <joint joint1="L_Middle_DIP_Joint" joint2="L_Middle_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
-    <joint joint1="L_Ring_DIP_Joint" joint2="L_Ring_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
-    <joint joint1="L_Little_DIP_Joint" joint2="L_Little_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
+    <joint name="eq_l_thumb_ip_mcp" joint1="L_Thumb_IP_Joint" joint2="L_Thumb_MCP_Joint" polycoef="-0.0015 0.6651 0.0186 0.1224 -0.0696" active="true" />
+    <joint name="eq_l_index_dip_pip" joint1="L_Index_DIP_Joint" joint2="L_Index_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
+    <joint name="eq_l_middle_dip_pip" joint1="L_Middle_DIP_Joint" joint2="L_Middle_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
+    <joint name="eq_l_ring_dip_pip" joint1="L_Ring_DIP_Joint" joint2="L_Ring_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
+    <joint name="eq_l_little_dip_pip" joint1="L_Little_DIP_Joint" joint2="L_Little_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
     <!-- Right hand -->
-    <joint joint1="R_Thumb_IP_Joint" joint2="R_Thumb_MCP_Joint" polycoef="-0.0015 0.6651 0.0186 0.1224 -0.0696" active="true" />
-    <joint joint1="R_Index_DIP_Joint" joint2="R_Index_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
-    <joint joint1="R_Middle_DIP_Joint" joint2="R_Middle_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
-    <joint joint1="R_Ring_DIP_Joint" joint2="R_Ring_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
-    <joint joint1="R_Little_DIP_Joint" joint2="R_Little_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
+    <joint name="eq_r_thumb_ip_mcp" joint1="R_Thumb_IP_Joint" joint2="R_Thumb_MCP_Joint" polycoef="-0.0015 0.6651 0.0186 0.1224 -0.0696" active="true" />
+    <joint name="eq_r_index_dip_pip" joint1="R_Index_DIP_Joint" joint2="R_Index_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
+    <joint name="eq_r_middle_dip_pip" joint1="R_Middle_DIP_Joint" joint2="R_Middle_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
+    <joint name="eq_r_ring_dip_pip" joint1="R_Ring_DIP_Joint" joint2="R_Ring_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
+    <joint name="eq_r_little_dip_pip" joint1="R_Little_DIP_Joint" joint2="R_Little_PIP_Joint" polycoef="-0.003849 0.4269 0.06589 0.136 -0.04621" active="true" />
   </equality>
 
 </mujoco>

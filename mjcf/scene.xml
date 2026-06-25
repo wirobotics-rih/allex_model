@@ -1,9 +1,6 @@
-<!-- ALLEX Model v0.1.2 -->
 <mujoco model="ALLEX scene">
   <include file="ALLEX.xml"/>
-
-  <statistic center="0 0 1" extent="1.8"/>
-
+  <statistic center="0.029994 -4.54957e-06 0.457207" extent="1.33198"/>
   <visual>
     <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
     <rgba haze="0.15 0.25 0.35 1"/>
@@ -19,6 +16,7 @@
 
   <worldbody>
     <light pos="0 0 3" dir="0 0 -1" directional="true"/>
+    <!-- floor at fixed-mount ground level: base_to_ground=0.685 m below Base_Link -->
     <geom name="floor" pos="0 0 -0.685" size="0 0 0.05" type="plane" material="groundplane"/>
   </worldbody>
 </mujoco>
