@@ -34,7 +34,9 @@ allex_model/
 ├─ usd/
 │  └─ ALLEX.usd      # robot model (Isaac Sim / OpenUSD) — EXPERIMENTAL
 ├─ meshes/           # tessellated visual + collision geometry (STL)
-└─ LICENSE
+├─ examples/         # runnable examples (MuJoCo motion replay) + recorded motions
+├─ LICENSE
+└─ MESHES-LICENSE
 ```
 
 ## Quick start
@@ -46,6 +48,9 @@ model = mujoco.MjModel.from_xml_path("mjcf/scene.xml")
 data  = mujoco.MjData(model)
 # or: python -m mujoco.viewer --mjcf=mjcf/scene.xml
 ```
+
+For a runnable demo — recorded-motion playback with gravity-compensation feed-forward —
+see [`examples/`](./examples/).
 
 **ROS 2 / RViz / MoveIt**
 
