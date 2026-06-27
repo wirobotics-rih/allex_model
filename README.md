@@ -36,7 +36,8 @@ allex_model/
 ├─ usd/
 │  └─ ALLEX.usd      # robot model (Isaac Sim / OpenUSD) — EXPERIMENTAL
 ├─ meshes/           # tessellated visual + collision geometry (STL)
-└─ LICENSE
+├─ LICENSE
+└─ MESHES-LICENSE
 ```
 
 ## Quick start
