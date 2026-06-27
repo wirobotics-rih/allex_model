@@ -1,5 +1,7 @@
 # ALLEX Simulation Model
 
+[![License](https://img.shields.io/github/license/wirobotics-rih/allex_model)](./LICENSE)
+
 **ALLEX** is an upper-body humanoid robot by WIRobotics, built for dexterous
 manipulation and learning-based robotics. It combines whole-body compliance across the
 arms, hands, neck, and waist with human-level dexterity from two high-DOF hands, and is
