@@ -9,12 +9,15 @@ section below. The MuJoCo example is the simplest and the recommended starting p
 
 ## `mujoco/replay.py` — recorded-motion playback (MuJoCo)
 
-Dynamic playback: drives the recorded trajectory with the MJCF's own `<position>` actuators
-(native MuJoCo PD) + gravity-comp feed-forward + error-term D (the same scheme the robot uses).
-Each joint is clamped to its own `actuatorfrcrange` (the model's torque limit) by `mj_step`, which
-also enforces the passive finger (`DIP←PIP`, `IP←MCP`) and waist couplings. Per-frame `kp`/`kv`
-from the motion are applied when present. Loads `mjcf/ALLEX.xml` (no ground plane — ALLEX is
-fixed-base). If the motion has no `qd` it falls back to finite-difference velocity.
+Dynamic playback with native MuJoCo actuators: each joint is a position servo (kp) **plus a
+velocity servo (kv)**, so the damping is the error term `kv·(q̇_ref − q̇)` integrated *implicitly*
+(stable at any speed) — not an explicit feed-forward (which diverges on light/fast joints). Gravity
+comp is fed forward, and each step the joint's `actuatorfrcrange` is shifted to `[-τ-G, +τ-G]` so the
+single motor limit clamps gravity-comp + PD **together** (`clip(PD + G, ±τ)`). `mj_step` enforces
+the passive finger (`DIP←PIP`, `IP←MCP`) and waist couplings. Per-frame `kp`/`kv` from the motion are
+applied when present. The position(kp,kv) → position(kp)+velocity(kv) split is built at load via
+`MjSpec` (the published MJCF is unchanged). Loads `mjcf/ALLEX.xml` (no ground plane — ALLEX is
+fixed-base).
 
 **Requirements:** Python ≥ 3.10; `pip install mujoco numpy` (see the
 [MuJoCo install docs](https://mujoco.readthedocs.io/en/stable/python.html)). No GPU needed.
@@ -32,9 +35,12 @@ Expect a few degrees of tracking lag during fast motion (PD control, not a kinem
 Loads the USD and replays the trajectory under PhysX with **gravity on**: the USD's native
 position drive does the PD (torque capped by the drive's `maxForce` — the model's own torque
 limit), with gravity comp + error-term D fed forward as joint efforts / velocity targets — the
-same scheme the robot uses — so the arms hold against gravity while tracking. Per-frame `kp`/`kv`
-from the motion are written to the drive when present. The model's PhysX mimic couplings resolve
-the finger/waist joints automatically. Expect small tracking lag during fast motion.
+same scheme the robot uses — so the arms hold against gravity while tracking. This example uses the
+model's **nominal gains** (it does not apply the motion's per-frame `kp`/`kv`), which is why it ships
+with `hello.npz`. The drive's `maxForce` clamps the **PD only** (gravity is a separate effort on top);
+PhysX's drive limit is symmetric, so it can't do the combined `clip(PD + G, ±τ)` headroom the MuJoCo
+example does — an accepted difference, as PhysX is not the accuracy reference. The model's PhysX mimic
+couplings resolve the finger/waist joints automatically. Expect small tracking lag during fast motion.
 
 **Requirements:** NVIDIA Isaac Sim 6.x on Python 3.12 — install per the
 [Isaac Sim install docs](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_python.html);
