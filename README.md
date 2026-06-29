@@ -24,6 +24,19 @@ Isaac / OpenUSD ecosystem, and stays consistent for ROS 2 tooling (RViz, MoveIt)
 > research/simulation model provided for evaluation and to demonstrate a small sim-to-real
 > gap — not the production/manufacturing model.
 
+## Demo
+
+The simulation matches the real ALLEX down to joint torque and fingertip contact force — a
+small sim-to-real gap made possible by both a physically accurate model **and** the real
+robot's mechanical **transparency** (high backdrivability, low distal mass), which makes those
+forces faithfully observable and reproducible. These demos show it: dynamic whole-arm motion
+tracked at an **arm-torque RMS error under 5.3 N·m**, and force sensing from kilogram payloads
+down to **tens of grams** at the fingertip — weighing bolts on a balance, and reading contact
+force while writing, grasping, and opening a can.
+
+[![Real Robot and Simulation — Matched Down to the Force](https://img.youtube.com/vi/5fsfo_FZDS0/hqdefault.jpg)](https://youtu.be/5fsfo_FZDS0)
+[![Capturing the Precise Contact Force](https://img.youtube.com/vi/GF9TSDP0K8c/hqdefault.jpg)](https://youtu.be/GF9TSDP0K8c)
+
 ## Layout
 
 ```
